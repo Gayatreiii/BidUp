@@ -1,0 +1,2 @@
+-r bidup101_requirements.txt
+torch>=2.2
