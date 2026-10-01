@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BidUp101 — Portfolio Intelligence</title>
+<link rel="stylesheet" href="/static/bidup101_styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="hdr">
+  <a class="logo" href="#/home">Bid<span>Up</span>101</a>
+  <nav id="bidup101-nav">
+    <a data-r="home" href="#/home">Home</a><a data-r="portfolio" href="#/portfolio">Portfolio</a>
+    <a data-r="chat" href="#/chat">Chat</a><a data-r="screener" href="#/screener">Screener</a>
+    <a data-r="stock" href="#/stock">Stock Detail</a><a data-r="simulator" href="#/simulator">Simulator</a>
+  </nav>
+  <div class="hdr-right">
+    <button id="bidup101-bell" class="icon-btn" title="Alerts">🔔<b id="bidup101-badge" hidden>0</b></button>
+    <div class="more">
+      <button id="bidup101-more" class="icon-btn" aria-label="More tools">☰</button>
+      <div id="bidup101-menu" class="menu" hidden>
+        <a href="#/gat">Risk analytics (GAT)</a><a href="#/compare">Portfolio comparison</a>
+        <a href="#/methodology">Methodology &amp; backtesting</a><a href="#/settings">Settings</a>
+        <a href="#/import">Import portfolio (CSV)</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="bidup101-notif" class="panel" hidden></div>
+<div class="notice">BidUp101 is an educational and analytical tool. It is not a broker or investment adviser and gives no personalized investment advice.</div>
+<main id="bidup101-main"></main>
+<div id="bidup101-toasts"></div>
+<script src="/static/bidup101_client.js"></script>
+</body>
+</html>
